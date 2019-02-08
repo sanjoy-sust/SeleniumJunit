@@ -38,7 +38,7 @@ public class LoginPageService {
     private void successLogin(String username, String password) {
         loginClick(username, password);
         WebDriverWait wait = new WebDriverWait(this.config.getDriver(), 40);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[2]/div/div[1]/div/div/div/div[2]/div[1]/div[2]/div/a")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Home")));
     }
 
     private void loginClick(String username, String password) {
@@ -53,7 +53,7 @@ public class LoginPageService {
 
 
     public String getSuccessButtonText() {
-        WebElement webElement = this.config.getDriver().findElement(By.xpath("/html/body/div[1]/div[2]/div/div[1]/div/div/div/div[2]/div[1]/div[2]/div/a"));
+        WebElement webElement = this.config.getDriver().findElement(By.linkText("Home"));
         return webElement.getText();
     }
 

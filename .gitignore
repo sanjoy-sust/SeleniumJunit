@@ -24,3 +24,5 @@ dist/
 nbdist/
 classes/
 .nb-gradle/
+target/
+
