@@ -28,6 +28,8 @@ public class SeleniumConfig {
             System.setProperty("webdriver.gecko.driver", findFile("geckodriver.exe"));
         }else if (osName.toLowerCase().contains("mac")){
             System.setProperty("webdriver.gecko.driver", findFile("geckodriver.mac"));
+        }else{
+            System.setProperty("webdriver.gecko.driver", findFile("geckodriver"));
         }
     }
 
