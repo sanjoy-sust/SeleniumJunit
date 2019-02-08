@@ -8,3 +8,6 @@ Instruction to run :
 4. Run LoginPageLiveTest.java file or
 run mvn -Dtest=LoginPageLiveTest test or 
 run mvn test
+
+
+For linux you have to dowmload geckodriver from internet and put it into project root directory.
